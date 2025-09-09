@@ -1,0 +1,6 @@
+{
+  "deep": true,
+  "packageManager": "pnpm",
+  "interactive": true,
+  "mergeConfig": true
+}

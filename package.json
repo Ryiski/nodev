@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "nodev",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "nodev": "./bin/nodev"
+  },
+  "exports": {
+    "./build": {
+      "main": "./dist/build.js",
+      "import": "./dist/build.js",
+      "types": "./dist/build.d.ts"
+    }
+  },
+  "scripts": {
+    "tsCheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@swc-node/register": "^1.11.1",
+    "@swc/cli": "^0.7.8",
+    "@swc/core": "^1.13.5",
+    "deepmerge": "^4.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1"
+  }
+}
